@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>personal form</title>
+<link rel="stylesheet" href="mystyle.css">
+<script type="text/javascript" src="result.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+</head>
+
+<body style="background-color:#CCC">
+<div class="container">
+  <h2 style="text-align:center">Personal Data</h2>
+  <form action="result.html" method="POST" onsubmit="myfunction()">
+    <div class="form-group">
+      <label for="fname">FirstName:</label>
+      <input type="text" class="form-control" id="firname" placeholder="first name" style="background-color:#CFF">
+    </div>
+    <div class="form-group">
+      <label for="lname">Lastname:</label>
+      <input type="text" class="form-control" id="lasname" placeholder="Last name"style="background-color:#CFF">
+    </div>
+     <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="text" class="form-control" id="mails" placeholder="E-mail"style="background-color:#CFF">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="Password" class="form-control" id="Pwd" placeholder="Password" value="" style="background-color:#CFF">
+    </div>
+    <div class="form-group">
+      <label for="cpwd">Confirm Password:</label>
+      <input type="password" class="form-control" id="cpwd" placeholder="Password" value="" style="background-color:#CFF">
+    </div>
+     <div class="form-group">
+      <label for="dob">Date-Of-Birth:</label>
+      <input type="date" class="form-control" id="dobs" placeholder=""style="background-color:#CFF">
+    </div>
+     <div class="form-group">
+      <label for="country">Country:</label>
+      <select name="country" class="form-control" id="countries"style="background-color:#CFF">
+      <option value="Pakistan">Pakistan</option>
+      <option value="Australia">Australia</option>
+      <option value="New Zealand">New Zealand</option>
+      <option value="India">India</option>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="America">America</option>
+      <option value="China">China</option>
+      <option value="Afghanistan">Afghanistan</option>
+      <option value="England">England</option>
+      <option value="Turkey">Turkey</option>  
+    </div>
+        <input type="submit" class="btn btn-primary" value="submit" onclick="handleSubmit ()" style="color: black;">
+  </form>
+</div>
+</body>
+</html>
